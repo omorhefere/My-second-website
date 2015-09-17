@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Contact</title>
+  <!--[if lt IE 9]>
+       <script src="/js/html5shiv.js"></script>
+    <![endif]-->
+  <script type="text/javascript" src="js/website.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/website.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <script src="js/jquery-2.1.1.js"></script>
+</head>
+
+<div id="header">
+  <header>
+    <a href="index.html">
+      <img class="image" src="WebsiteImages/ooi.png" alt="logo" id="logo">
+    </a>
+  </header>
+</div>
+<div id="navBar">
+
+  <nav>
+    <ul>
+
+      <li><a href="index.html" accesskey="H" title="Website Homepage">Home</a> </li>
+      <li><a href="About.html" accesskey="A" title="Academic information">About me</a> </li>
+      <li><a href="contact.html" accesskey="O" title="Contact Information ">Contact me</a> </li>
+      <li><a href="portfolio.html" accesskey="P" title="Portfolio">Portfolio</a> </li>
+
+    </ul>
+  </nav>
+
+</div>
+
+<body>
+  <form  method="post" action="form.php"onsubmit="return validate(this)">
+    <p>
+      <label for="name"> Name </label>
+      <input type="text" name="name" id="name" maxlength="40" size="20"  autofocus />
+    </p>
+    <p>
+      <label for="email">E-mail </label>
+      <input type="email" name="email" id="email" maxlength="50" size="30"  />
+    </p>
+    <p>
+      <label for="phonenumber">Mobile Number </label>
+      <input type="text" name="number" id="number" maxlength="11" size="20"  />
+    </p>
+    <p>
+      <label for="Comments">Comments </label>
+      <textarea id="comment" name="comment"
+        rows = "5"
+        cols = "40"
+        >
+      </textarea>
+      </p>
+        <p class="form">
+          <input class="button gray"type="submit" name="submit" id="submit" value="submit" />
+          <input class="button gray" type="reset" id="reset" />
+        </p>
+  </form>
+</body>
+<footer class="index">
+  <p class="footer" > &copy; OOI DESIGNS All Rights Reserved.
+    <script>
+      document.write(new Date().getFullYear())
+    </script>
+  </p>
+  <!--Gets current year-->
+</footer>
